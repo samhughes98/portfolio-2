@@ -305,6 +305,7 @@ ul {
         margin-left: 0.5vw;
         margin-top: 0.3vh;
         font-family: 'text';
+        font-size: 16px;
       }
 
       #imgCaption, #imgCaption2, #imgCaption3, #imgCaption4, #imgCaption5, #imgCaption6 {
@@ -519,4 +520,11 @@ form button {
   height: 50vh;
   width: 40vw;
   background-image: url("../static/images/lines.svg");
+}
+
+#myNumber {
+  position: absolute;
+  right: 10vw;
+  top: 15vh;
+  text-align: center;
 }

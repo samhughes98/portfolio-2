@@ -278,6 +278,7 @@ ul li {
   margin-left: 0.5vw;
   margin-top: 0.3vh;
   font-family: "text";
+  font-size: 16px;
 }
 #finalSectionDiv #projectDiv #projImgDiv #imgCaption, #finalSectionDiv #projectDiv #projImgDiv #imgCaption2, #finalSectionDiv #projectDiv #projImgDiv #imgCaption3, #finalSectionDiv #projectDiv #projImgDiv #imgCaption4, #finalSectionDiv #projectDiv #projImgDiv #imgCaption5, #finalSectionDiv #projectDiv #projImgDiv #imgCaption6 {
   display: none;
@@ -474,4 +475,11 @@ form button {
   height: 50vh;
   width: 40vw;
   background-image: url("../static/images/lines.svg");
+}
+
+#myNumber {
+  position: absolute;
+  right: 10vw;
+  top: 15vh;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

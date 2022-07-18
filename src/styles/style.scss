@@ -145,7 +145,7 @@ ul {
 #sectionOneDiv {
   margin-top: 68vh;
   width: 100vw;
-  height: 80vh;
+  height: 85vh;
   background-color: black;
   font-family: "text";
 
@@ -157,13 +157,13 @@ ul {
     justify-content: space-around;
     color: white;
     left: 9vw;
-    top: 132vh;
+    top: 129.5vh;
   }
 
   /*Circles on timeline bar*/
   #circle {
-    height: 8px;
-    width: 8px;
+    height: 1.5vh;
+    width: 1.5vh;
     background-color: grey;
     border-radius: 50%;
     display: inline-block;
@@ -171,15 +171,15 @@ ul {
   /*Education timeline text */
   #educationText {
     position: absolute;
-    font-size: 0.8em;
-    height: 53vh;
-    width: 20vw;
+    font-size: 1em;
+    height: 48vh;
+    width: 15vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
     margin-left: 24vw;
-    top: 145vh;
+    top: 146vh;
 
     #educationText1 {
       color: white;
@@ -187,14 +187,17 @@ ul {
 
     #educationText2 {
       color: white;
+      padding-top: 5vh;
     }
 
     #educationText3 {
       color: white;
+      padding-top: 4vh;
     }
 
     #educationText4 {
       color: white;
+      padding-top: 3vh;
     }
   }
 
@@ -202,14 +205,18 @@ ul {
   #workText {
     position: absolute;
     font-size: 0.8em;
-    height: 53vh;
+    height: 46vh;
     width: 20vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
     margin-left: 62vw;
-    top: 145vh;
+    top: 142vh;
+
+    div {
+      padding-top: 5vh;
+    }
 
     #workText1 {
       color: white;
@@ -234,7 +241,7 @@ ul {
     margin-top: 43vh;
     margin-left: 50vw;
     height: 2vh;
-    width: 20vw;
+    width: 20%;
     transform: rotate(90deg);
     border-bottom: 3px solid grey;
     z-index: 2;
@@ -245,10 +252,10 @@ ul {
 
   #educationTimelineBar {
     position: absolute;
-    margin-top: 43vh;
-    margin-left: 12vw;
-    height: 2vh;
-    width: 20vw;
+    margin-top: 47vh;
+    margin-left: 8.5vw;
+    height: 1vh;
+    width: 25%;
     transform: rotate(90deg);
     border-bottom: 3px solid grey;
     z-index: 2;
@@ -268,7 +275,7 @@ ul {
 
   #myProjHeading {
     font-size: 1.5em;
-    margin-top: 9vh;
+    margin-top: 25vh;
     margin-left: 5vw;
   }
 
@@ -276,7 +283,7 @@ ul {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
     width: 90%;
     height: 90%;
 
@@ -293,7 +300,14 @@ ul {
       width: 75%;
       height: 100%;
 
-      #imgCaption {
+      
+      #imgCaption p {
+        margin-left: 0.5vw;
+        margin-top: 0.3vh;
+        font-family: 'text';
+      }
+
+      #imgCaption, #imgCaption2, #imgCaption3, #imgCaption4, #imgCaption5, #imgCaption6 {
         display: none;
         position: absolute;
         background: linear-gradient(
@@ -306,6 +320,45 @@ ul {
         bottom: -31vh;
         animation: rise 0.2s linear;
         color: white;
+        overflow: hidden;
+      }
+
+      #imgCaption2, #imgCaption3, #imgCaption4, #imgCaption5, #imgCaption6 {
+        position: absolute;
+        bottom: 47.6vh;
+        width: 27.2vw;
+        height: 10vh;
+        overflow: hidden;
+
+        p{
+          margin-left: 0.5vw;
+          width: 80%;
+          margin-top: -0.3vh;
+          font-size: 0.8em;
+          font-family: 'text';
+        }
+      }
+
+      #imgCaption2 {
+        margin-left: 35.4vw;
+        margin-bottom: 60.5vh;
+      }
+
+      #imgCaption3 {
+        margin-left: 35.4vw;
+        margin-bottom: 30vh;
+      }
+
+      #imgCaption4{
+       margin-left: -22.5vw;
+      }
+
+      #imgCaption5 {
+        margin-left: 35.3vw;
+      }
+
+      #imgCaption6 {
+       margin-left: 5.6vw;
       }
 
       @keyframes rise {

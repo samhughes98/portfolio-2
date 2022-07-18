@@ -140,7 +140,7 @@ ul li {
 #sectionOneDiv {
   margin-top: 68vh;
   width: 100vw;
-  height: 80vh;
+  height: 85vh;
   background-color: black;
   font-family: "text";
   /*Formatting titles for timeline div*/
@@ -156,48 +156,54 @@ ul li {
   justify-content: space-around;
   color: white;
   left: 9vw;
-  top: 132vh;
+  top: 129.5vh;
 }
 #sectionOneDiv #circle {
-  height: 8px;
-  width: 8px;
+  height: 1.5vh;
+  width: 1.5vh;
   background-color: grey;
   border-radius: 50%;
   display: inline-block;
 }
 #sectionOneDiv #educationText {
   position: absolute;
-  font-size: 0.8em;
-  height: 53vh;
-  width: 20vw;
+  font-size: 1em;
+  height: 48vh;
+  width: 15vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-left: 24vw;
-  top: 145vh;
+  top: 146vh;
 }
 #sectionOneDiv #educationText #educationText1 {
   color: white;
 }
 #sectionOneDiv #educationText #educationText2 {
   color: white;
+  padding-top: 5vh;
 }
 #sectionOneDiv #educationText #educationText3 {
   color: white;
+  padding-top: 4vh;
 }
 #sectionOneDiv #educationText #educationText4 {
   color: white;
+  padding-top: 3vh;
 }
 #sectionOneDiv #workText {
   position: absolute;
   font-size: 0.8em;
-  height: 53vh;
+  height: 46vh;
   width: 20vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-left: 62vw;
-  top: 145vh;
+  top: 142vh;
+}
+#sectionOneDiv #workText div {
+  padding-top: 5vh;
 }
 #sectionOneDiv #workText #workText1 {
   color: white;
@@ -216,7 +222,7 @@ ul li {
   margin-top: 43vh;
   margin-left: 50vw;
   height: 2vh;
-  width: 20vw;
+  width: 20%;
   transform: rotate(90deg);
   border-bottom: 3px solid grey;
   z-index: 2;
@@ -225,10 +231,10 @@ ul li {
 }
 #sectionOneDiv #educationTimelineBar {
   position: absolute;
-  margin-top: 43vh;
-  margin-left: 12vw;
-  height: 2vh;
-  width: 20vw;
+  margin-top: 47vh;
+  margin-left: 8.5vw;
+  height: 1vh;
+  width: 25%;
   transform: rotate(90deg);
   border-bottom: 3px solid grey;
   z-index: 2;
@@ -245,14 +251,14 @@ ul li {
 }
 #finalSectionDiv #myProjHeading {
   font-size: 1.5em;
-  margin-top: 9vh;
+  margin-top: 25vh;
   margin-left: 5vw;
 }
 #finalSectionDiv #projectDiv {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5vh;
+  margin-top: 10vh;
   width: 90%;
   height: 90%;
 }
@@ -268,7 +274,12 @@ ul li {
   width: 75%;
   height: 100%;
 }
-#finalSectionDiv #projectDiv #projImgDiv #imgCaption {
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption p {
+  margin-left: 0.5vw;
+  margin-top: 0.3vh;
+  font-family: "text";
+}
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption, #finalSectionDiv #projectDiv #projImgDiv #imgCaption2, #finalSectionDiv #projectDiv #projImgDiv #imgCaption3, #finalSectionDiv #projectDiv #projImgDiv #imgCaption4, #finalSectionDiv #projectDiv #projImgDiv #imgCaption5, #finalSectionDiv #projectDiv #projImgDiv #imgCaption6 {
   display: none;
   position: absolute;
   background: linear-gradient(to bottom, #323639 0%, #282C2F 100%);
@@ -278,6 +289,38 @@ ul li {
   -webkit-animation: rise 0.2s linear;
           animation: rise 0.2s linear;
   color: white;
+  overflow: hidden;
+}
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption2, #finalSectionDiv #projectDiv #projImgDiv #imgCaption3, #finalSectionDiv #projectDiv #projImgDiv #imgCaption4, #finalSectionDiv #projectDiv #projImgDiv #imgCaption5, #finalSectionDiv #projectDiv #projImgDiv #imgCaption6 {
+  position: absolute;
+  bottom: 47.6vh;
+  width: 27.2vw;
+  height: 10vh;
+  overflow: hidden;
+}
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption2 p, #finalSectionDiv #projectDiv #projImgDiv #imgCaption3 p, #finalSectionDiv #projectDiv #projImgDiv #imgCaption4 p, #finalSectionDiv #projectDiv #projImgDiv #imgCaption5 p, #finalSectionDiv #projectDiv #projImgDiv #imgCaption6 p {
+  margin-left: 0.5vw;
+  width: 80%;
+  margin-top: -0.3vh;
+  font-size: 0.8em;
+  font-family: "text";
+}
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption2 {
+  margin-left: 35.4vw;
+  margin-bottom: 60.5vh;
+}
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption3 {
+  margin-left: 35.4vw;
+  margin-bottom: 30vh;
+}
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption4 {
+  margin-left: -22.5vw;
+}
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption5 {
+  margin-left: 35.3vw;
+}
+#finalSectionDiv #projectDiv #projImgDiv #imgCaption6 {
+  margin-left: 5.6vw;
 }
 @-webkit-keyframes rise {
   0% {

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body style="font-weight: bold;">
+        <div id="navBar">
+      <ul>
+        <a href="./about.html"><li>About me</li></a>
+        <a href="./index.html"><li>My work</li></a>
+        <a href="contact.html"><li>Contact me</li></a>
+      </ul>
+      <div id="navBorder"></div>
+    </div>
+    <div id="contactTitleDiv"><h1 id="contactTitle">Contact <br><h1 id="contactTitle" style="text-decoration: underline; text-underline-offset: 10px; margin-top: 30vh;">me</h1></h1></span></div>
+    <div id="socialsDiv" style="margin-top: -12vh;">
+        <a href="https://github.com/samhughes98"
+          ><img src="./static/icons/github.svg"
+        /></a>
+        <a href="https://www.linkedin.com/in/sam-hughes-286000147/"
+          ><img src="./static/icons/linkedin.svg"
+        /></a>
+        <a href="https://twitter.com/SamuelH43961384"
+          ><img src="./static/icons/twitter.svg"
+        /></a>
+        <a href="https://github.com/samhughes98"
+          ><img src="./static/icons/instagram.svg"
+        /></a>
+        <a href="https://dribbble.com/samhughes98"
+          ><img src="./static/icons/dribbble.svg"
+        /></a>
+      </div>
+    <div id="formDiv">
+        <form onSubmit="validate()">
+            <label>Name:</label>
+            <input type="name" id="userName">
+
+            <label>Topic:</label>
+            <input type="name" id="userSubject">
+
+            <label>Message:</label>
+            <textarea id="userMessage" name="userMessage"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+
+
+    </div>
+
+    <div><img src="./static/images/lines.svg" id="waveImg" style="right: -40vw;"></div>
+
+
+
+        
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/validation.js"></script>
+    </body>
+</html>

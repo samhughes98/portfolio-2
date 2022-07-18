@@ -278,7 +278,7 @@ ul li {
   margin-left: 0.5vw;
   margin-top: 0.3vh;
   font-family: "text";
-  font-size: 16px;
+  font-size: 24px;
 }
 #finalSectionDiv #projectDiv #projImgDiv #imgCaption, #finalSectionDiv #projectDiv #projImgDiv #imgCaption2, #finalSectionDiv #projectDiv #projImgDiv #imgCaption3, #finalSectionDiv #projectDiv #projImgDiv #imgCaption4, #finalSectionDiv #projectDiv #projImgDiv #imgCaption5, #finalSectionDiv #projectDiv #projImgDiv #imgCaption6 {
   display: none;

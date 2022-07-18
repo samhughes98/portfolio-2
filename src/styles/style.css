@@ -18,6 +18,15 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: "heading";
+}
+
+h3 {
+  font-family: "heading";
+  text-align: center;
+}
+
 /* styling subtle wave image in bg */
 #waveImg {
   position: fixed;
@@ -68,6 +77,16 @@ ul li {
   font-family: "heading";
   margin-left: 8vw;
 }
+#mainHeadingDiv #subHeading {
+  text-align: left;
+  margin-left: 8vw;
+}
+#mainHeadingDiv #typedText:focus {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
 
 /* Button on landing page styles */
 .button-54 {
@@ -109,7 +128,7 @@ ul li {
   position: absolute;
   display: flex;
   justify-content: space-around;
-  top: 60vh;
+  top: 66vh;
   left: 8vw;
 }
 #socialsDiv img {
@@ -132,15 +151,12 @@ ul li {
 }
 #sectionOneDiv #sectionOneTitle {
   position: absolute;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   color: white;
-  left: 13vw;
-  top: 127vh;
-  /*Manual positioning of education experience title */
-}
-#sectionOneDiv #sectionOneTitle #title2 {
-  margin-left: 18vw;
+  left: 9vw;
+  top: 132vh;
 }
 #sectionOneDiv #circle {
   height: 8px;
@@ -152,13 +168,13 @@ ul li {
 #sectionOneDiv #educationText {
   position: absolute;
   font-size: 0.8em;
-  height: 53%;
+  height: 53vh;
   width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: 24vw;
-  top: 139vh;
+  top: 145vh;
 }
 #sectionOneDiv #educationText #educationText1 {
   color: white;
@@ -175,13 +191,13 @@ ul li {
 #sectionOneDiv #workText {
   position: absolute;
   font-size: 0.8em;
-  height: 53%;
+  height: 53vh;
   width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: 62vw;
-  top: 139vh;
+  top: 145vh;
 }
 #sectionOneDiv #workText #workText1 {
   color: white;
@@ -220,8 +236,89 @@ ul li {
   justify-content: space-between;
 }
 
+/* My projects section*/
 #finalSectionDiv {
   height: 100vh;
   width: 100vw;
   background-color: #f6d13a;
+}
+#finalSectionDiv #myProjHeading {
+  font-size: 1.5em;
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+#finalSectionDiv #projectDiv {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  width: 90%;
+  height: 90%;
+}
+#finalSectionDiv #projectDiv #imgTitle {
+  position: absolute;
+  z-index: 1;
+  width: 20vw;
+  height: 20vw;
+  background-color: #f6d13a;
+}
+#finalSectionDiv #projectDiv #projImgDiv {
+  float: right;
+  width: 75%;
+  height: 100%;
+}
+#finalSectionDiv #projectDiv #projImgDiv #img1 {
+  position: absolute;
+  left: 0;
+  width: 60vw;
+  height: 20%;
+}
+#finalSectionDiv #projectDiv #projImgDiv #projImg2,
+#finalSectionDiv #projectDiv #projImgDiv #projImg3,
+#finalSectionDiv #projectDiv #projImgDiv #projImg4,
+#finalSectionDiv #projectDiv #projImgDiv #projImg5,
+#finalSectionDiv #projectDiv #projImgDiv #projImg6 {
+  width: 27vw;
+  height: 27vh;
+}
+#finalSectionDiv #projectDiv #projImgDiv #projImg1 {
+  position: absolute;
+  width: 55vw;
+  height: 57vh;
+}
+#finalSectionDiv #projectDiv #projImgDiv #projImg2 {
+  position: absolute;
+  right: 0;
+  margin-right: 5vw;
+}
+#finalSectionDiv #projectDiv #projImgDiv #projImg3 {
+  position: absolute;
+  right: 0;
+  margin-right: 5vw;
+  margin-top: 30vh;
+}
+#finalSectionDiv #projectDiv #projImgDiv #projImg4 {
+  position: absolute;
+  left: 0;
+  bottom: 2.5vh;
+  margin-right: 5vw;
+  margin-top: 40vh;
+}
+#finalSectionDiv #projectDiv #projImgDiv #projImg5 {
+  position: absolute;
+  right: 0;
+  margin-right: 5vw;
+  margin-top: 60vh;
+}
+#finalSectionDiv #projectDiv #projImgDiv #projImg6 {
+  position: absolute;
+  bottom: 2.5vh;
+  left: 28vw;
+  margin-right: 5vw;
+  margin-top: 40vh;
+}
+#finalSectionDiv #projectDiv #projImgDiv img {
+  opacity: 0.9;
+  -o-object-fit: fill;
+     object-fit: fill;
 }/*# sourceMappingURL=style.css.map */

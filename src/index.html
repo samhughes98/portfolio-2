@@ -7,11 +7,6 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <!--Font awesome CDN-->
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
   </head>
   <body>
     <!--Navbar HTML-->
@@ -25,7 +20,20 @@
     </div>
     <div id="mainHeadingDiv">
       <h1 id="mainHeading">My name is Sam Hughes</h1>
-      <button class="button-54" role="button">View My Work</button>
+      <span
+        id="typedText"
+        contenteditable="true"
+        oncut="return false"
+        onpaste="return false"
+        onkeydown="return false;"
+        ondragenter="return false;"
+        ondragleave="return false;"
+        ondragover="return false;"
+        ondrop="return false;"
+      >
+        <h3 id="subHeading"></h3
+      ></span>
+      <button class="button-54" id="buttonScroll">View My Work</button>
 
       <!-- Div to contain social media links -->
       <div id="socialsDiv">
@@ -47,44 +55,94 @@
       </div>
     </div>
 
-
     <!--Wave image to overlay on screen-->
-    <img src="./static/images/lines.svg" id="waveImg">
+    <img src="./static/images/lines.svg" id="waveImg" />
 
     <div id="sectionOneDiv">
-        <div id="sectionOneTitle">
-            <h1>Work Experience</h1>
-            <h1 id="title2">Education Experience</h1>
-        </div>
-        <div id="workTimelineBar">
-            <div id="circle"></div>
-            <div id="circle"></div>
-            <div id="circle"></div>
-        </div>
-        
-        <div id="educationTimelineBar">
-            <div id="circle"></div> 
-            <div id="circle"></div> 
-            <div id="circle"></div> 
-            <div id="circle"></div> 
-        </div>
-        <div id="educationText">
-            <div id="educationText1"><time>2022 - Current</time> <br> Junior Web Developer <br> Design Religion</div>
-            <div id="educationText2"><time>2018 - 2022</time> <br> Customer Service Advisor <br> Superbowl UK</div>
-            <div id="educationText3"><time>2017 - 2018</time> <br> Customer Service Advisor <br> Marks and Spencer </div>
-            <div id="educationText4"><time>2015 - 2017</time> <br> Software Engineer/Tester <br> Qcom Outsourcing</div>
-        </div>
-        <div id="workText">
-            <div id="workText2"><time>2015 - 2017</time> <br> Cardiff Metropolitan university <br> Bsc (with Hons) in Copmuter Science <br> <mark>Grade: 1st </mark></div>
-            <div id="workText3"><time>2015 - 2016</time> <br> 3aaa Apprenticeships <br> Level 3 Extended Diploma in software development <br> <mark>Grade: Distinction</mark></div>
-            <div id="workText4"><time>2014 - 2015</time> <br> HOW College Bromsgrove <br> Level 3 Extended diploma in IT <br><mark> Grade: Distinction</mark></div>
-        </div>
-    </div>
+      <div id="sectionOneTitle">
+        <h1>Work Experience</h1>
+        <h1 id="title2">Education Experience</h1>
+      </div>
+      <div id="workTimelineBar">
+        <div id="circle"></div>
+        <div id="circle"></div>
+        <div id="circle"></div>
+      </div>
 
+      <div id="educationTimelineBar">
+        <div id="circle"></div>
+        <div id="circle"></div>
+        <div id="circle"></div>
+        <div id="circle"></div>
+      </div>
+      <div id="educationText">
+        <div id="educationText1">
+          <time>2022 - Current</time> <br />
+          Junior Web Developer <br />
+          Design Religion
+        </div>
+        <div id="educationText2">
+          <time>2018 - 2022</time> <br />
+          Customer Service Advisor <br />
+          Superbowl UK
+        </div>
+        <div id="educationText3">
+          <time>2017 - 2018</time> <br />
+          Customer Service Advisor <br />
+          Marks and Spencer
+        </div>
+        <div id="educationText4">
+          <time>2015 - 2017</time> <br />
+          Software Engineer/Tester <br />
+          Qcom Outsourcing
+        </div>
+      </div>
+      <div id="workText">
+        <div id="workText2">
+          <time>2015 - 2017</time> <br />
+          Cardiff Metropolitan university <br />
+          Bsc (with Hons) in Copmuter Science <br />
+          <mark>Grade: 1st </mark>
+        </div>
+        <div id="workText3">
+          <time>2015 - 2016</time> <br />
+          3aaa Apprenticeships <br />
+          Level 3 Extended Diploma in software development <br />
+          <mark>Grade: Distinction</mark>
+        </div>
+        <div id="workText4">
+          <time>2014 - 2015</time> <br />
+          HOW College Bromsgrove <br />
+          Level 3 Extended diploma in IT <br /><mark> Grade: Distinction</mark>
+        </div>
+      </div>
+    </div>
 
     <div id="finalSectionDiv">
-
+      <div id="myProjHeading"><h1>My projects</h1></div>
+      <div id="projectDiv">
+        <div id="projImgDiv">
+          <div id="img1">
+            <img id="projImg1" src="./static/images/paradox.jpg" />
+          </div>
+          <div id="img2">
+            <img id="projImg2" src="./static/images/direct-main-img.jpg" />
+          </div>
+          <div id="img3">
+            <img id="projImg3" src="./static/images/dnd.jpg" />
+          </div>
+          <div id="img4">
+            <img id="projImg4" src="./static/images/portfolio1.jpg" />
+          </div>
+          <div id="img5">
+            <img id="projImg5" src="./static/images/terminal.jpg " />
+          </div>
+          <div id="img6">
+            <img id="projImg6" src="./static/images/lh.jpg" />
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./scripts/script.js" async defer></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

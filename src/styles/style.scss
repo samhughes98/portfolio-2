@@ -1,0 +1,249 @@
+/* Fonts and globals */
+@font-face {
+  font-family: "heading";
+  src: url("../static/fonts/grotesk.ttf");
+}
+
+@font-face {
+  font-family: "text";
+  src: url("../static/fonts/Latinka\ Medium.otf");
+}
+
+* {
+  text-decoration: none;
+}
+body {
+  background-color: #f6d13a;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* styling subtle wave image in bg */
+#waveImg {
+  position: fixed;
+  opacity: 0.6;
+  right: -30vw;
+  bottom: -25vh;
+  transform: rotate(300deg);
+  z-index: -1;
+}
+
+/* Navbar Styling */
+#navBar {
+  position: absolute;
+  right: 0;
+  top: 0.5vh;
+  width: 40vw;
+  height: 6vh;
+  text-align: center;
+  font-size: 1.1em;
+
+  #navBorder {
+    position: absolute;
+    width: 85%;
+    height: 0.2vh;
+    border-bottom: 1.8px solid black;
+  }
+}
+
+ul {
+  margin-right: 5vw;
+  li {
+    color: black;
+    letter-spacing: 2px;
+    font-family: "text";
+    font-weight: 600;
+    list-style: none;
+    display: inline;
+    padding-right: 3vw;
+  }
+}
+
+/* Heading styling */
+#mainHeadingDiv {
+  margin-top: 20vh;
+  #mainHeading {
+    width: 35vw;
+    font-size: 4.5vw;
+    font-family: "heading";
+
+    margin-left: 8vw;
+  }
+}
+
+/* Button on landing page styles */
+.button-54 {
+  height: 6vh;
+  width: 13.5vw;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25vw 0.5vw;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  margin-left: 8vw;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.5em;
+  }
+}
+
+/* Social media Div */
+#socialsDiv {
+  width: 25vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 60vh;
+  left: 8vw;
+
+  img {
+    height: auto;
+    width: 4vw;
+  }
+}
+
+/* First block section below landing page*/
+#sectionOneDiv {
+  margin-top: 68vh;
+  width: 100vw;
+  height: 80vh;
+  background-color: black;
+  font-family: 'text';
+
+  /*Formatting titles for timeline div*/
+  #sectionOneTitle {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    left: 13vw;
+    top: 127vh;
+
+    /*Manual positioning of education experience title */
+    #title2 {
+        margin-left: 18vw;
+    }
+  }
+
+  /*Circles on timeline bar*/
+  #circle {
+    height: 8px;
+    width: 8px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  /*Education timeline text */
+  #educationText {
+    position: absolute;
+    font-size: 0.8em;
+    height: 53%;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-left: 24vw;
+    top: 139vh;
+
+    #educationText1 {
+      color: white;
+    }
+
+    #educationText2 {
+      color: white;
+    }
+
+    #educationText3 {
+      color: white;
+    }
+
+    #educationText4 {
+      color: white;
+    }
+  }
+
+  /* Employment timeline text */
+  #workText {
+    position: absolute;
+    font-size: 0.8em;
+    height: 53%;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-left: 62vw;
+    top: 139vh;
+
+    #workText1 {
+      color: white;
+    }
+
+    #workText2 {
+      color: white;
+    }
+
+    #workText3 {
+      color: white;
+    }
+
+    #workText4 {
+      color: white;
+    }
+  }
+
+  /*Timeline bar styling */
+  #workTimelineBar {
+    position: absolute;
+    margin-top: 43vh;
+    margin-left: 50vw;
+    height: 2vh;
+    width: 20vw;
+    transform: rotate(90deg);
+    border-bottom: 3px solid grey;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #educationTimelineBar {
+    position: absolute;
+    margin-top: 43vh;
+    margin-left: 12vw;
+    height: 2vh;
+    width: 20vw;
+    transform: rotate(90deg);
+    border-bottom: 3px solid grey;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#finalSectionDiv {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f6d13a;
+}

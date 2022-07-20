@@ -3,8 +3,7 @@
 //eventListener for button press (onClick doesnt want to work)
 document.getElementById("buttonScroll").addEventListener("click", scrollToTop);
 
-//event listener for caption animation to play on big image
-
+//event listener for caption animation to play on big image &&
 //Grabbing all images from project section on index page
 var mainImg = document.getElementById("img1");
 var projImg2 = document.getElementById("img2");
